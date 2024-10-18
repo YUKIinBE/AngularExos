@@ -1,0 +1,38 @@
+<h2>Exercice 02 - Complétion du profil</h2>
+
+<p style="font-weight: bold;">
+	Créer une application qui coupe l'écran en deux. <br>
+	A gauche, un formulaire reprenant les informations de l'utilisateur. <br>
+	A droite, le profil de l'utilisateur qui se remplit en même temps que l'utilisateur entre les informations. <br>
+	La complétion du profil doit se faire en instantanné. <br>
+	Reprennez les différents champs de l'exercice 01 en y personnalisant certains.
+</p>
+
+<hr>
+<div class="grid">
+	<div>
+		<input type="text" [(ngModel)]="nom" placeholder="Nom">
+		<input type="text" [(ngModel)]="prenom" placeholder="Prénom">
+		<input type="date" [(ngModel)]="dateNaiss">
+		<select [(ngModel)]="genre">
+			<option value="">Genre</option>
+			<option value="Homme">Homme</option>
+			<option value="Femme">Femme</option>
+			<option value="Autre">Autre</option>
+		</select>
+		<input type="text" [(ngModel)]="langue" placeholder="Langues">
+		<input type="text" [(ngModel)]="image" placeholder="image">
+	</div>
+	<div>
+		<p> Nom : {{ nom }} </p>
+		<p> Prenom : {{ prenom }} </p>
+		<p> Date de naissance : {{ dateNaiss }}</p>
+		<p> Genre : {{ genre }}</p>
+		<p> Langues : {{ langue }}</p>
+		<img src="{{ image }}">
+	</div>
+</div>
+
+<a routerLink="">
+	<button class="btn btn-primary">Home</button>
+</a>

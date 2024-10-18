@@ -1,0 +1,21 @@
+.grid{
+	display: grid; 
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+
+	&>div{
+		padding: 10px;
+		margin-bottom: 10px;
+		border: 1px solid;
+	}
+}
+
+input{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+img{
+	width: 200px;
+}
