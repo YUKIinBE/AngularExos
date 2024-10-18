@@ -8,6 +8,7 @@ import { Exo01PropertyBindingComponent } from './exos/exo01-property-binding/exo
 import { FormsModule } from '@angular/forms';
 import { ExosComponent } from './exos/exos.component';
 import { Exo02TwoWayBindingComponent } from './exos/exo02-two-way-binding/exo02-two-way-binding.component';
+import { Exo03EventBindingComponent } from './exos/exo03-event-binding/exo03-event-binding.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { Exo02TwoWayBindingComponent } from './exos/exo02-two-way-binding/exo02-
     ExosComponent,
     Exo01PropertyBindingComponent,
     Exo02TwoWayBindingComponent,
+    Exo03EventBindingComponent,
   ],
   imports: [
     BrowserModule,
