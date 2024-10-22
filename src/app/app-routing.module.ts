@@ -7,6 +7,7 @@ import { Exo03EventBindingComponent } from './exos/exo03-event-binding/exo03-eve
 import { Exo04AttributeBindingComponent } from './exos/exo04-attribute-binding/exo04-attribute-binding.component';
 import { Exo05BaseRoutingComponent } from './exos/exo05-base-routing/exo05-base-routing.component';
 import { Exo06PipesComponent } from './exos/exo06-pipes/exo06-pipes.component';
+import { Exo07CustomPipesComponent } from './exos/exo07-custom-pipes/exo07-custom-pipes.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,7 +17,8 @@ const routes: Routes = [
     { path: 'exo03', component: Exo03EventBindingComponent },
     { path: 'exo04', component: Exo04AttributeBindingComponent },
     { path: 'exo05', component: Exo05BaseRoutingComponent },
-    { path: 'exo06', component: Exo06PipesComponent}
+    { path: 'exo06', component: Exo06PipesComponent},
+    { path: 'exo07', component: Exo07CustomPipesComponent }
   ]}
 ];
 

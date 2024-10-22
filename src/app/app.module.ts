@@ -12,6 +12,9 @@ import { Exo03EventBindingComponent } from './exos/exo03-event-binding/exo03-eve
 import { Exo04AttributeBindingComponent } from './exos/exo04-attribute-binding/exo04-attribute-binding.component';
 import { Exo05BaseRoutingComponent } from './exos/exo05-base-routing/exo05-base-routing.component';
 import { Exo06PipesComponent } from './exos/exo06-pipes/exo06-pipes.component';
+import { Exo07CustomPipesComponent } from './exos/exo07-custom-pipes/exo07-custom-pipes.component';
+import { ToMinutePipe } from './exos/exo07-custom-pipes/Pipes/to-minute.pipe';
+import { ConvertisseurDegrePipe } from './exos/exo07-custom-pipes/Pipes/convertisseur-degre.pipe';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { Exo06PipesComponent } from './exos/exo06-pipes/exo06-pipes.component';
     Exo04AttributeBindingComponent,
     Exo05BaseRoutingComponent,
     Exo06PipesComponent,
+    Exo07CustomPipesComponent,
+    ToMinutePipe,
+    ConvertisseurDegrePipe,
   ],
   imports: [
     BrowserModule,
