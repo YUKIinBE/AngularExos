@@ -1,0 +1,80 @@
+<h2>Exercice 06 - Pipes</h2>
+
+<p style="font-weight: bold;">
+	String Pipe
+</p>
+<p>
+	{{ myString }} => UpperCase <br>
+	{{ myString | uppercase }}
+</p>
+
+<p>
+	{{ myString }} => lowercase <br>
+	{{ myString | lowercase }}
+</p>
+
+<p>
+	{{ myString }} => Title Case <br>
+	{{ myString | titlecase }}
+</p>
+
+<p style="font-weight: bold;">
+	Number Pipe <br>
+	number : minIntegerDigits . minFractionDigits - maxFractionDigits
+</p>
+
+<p>
+	{{ myNumber1 }} => number : '1.2-3' <br>
+	{{ myNumber1 | number : '1.2-3' }}
+</p>
+
+<p>
+	{{ myNumber2 }} => number : '1.2-3' <br>
+	{{ myNumber2 | number : '1.2-3' }}
+</p>
+
+<p style="font-weight: bold;">
+	Percent Pipe
+</p>
+
+<p>
+	{{ myPercentage }} => myPercentage : '1.2-3' <br>
+	{{ myPercentage | percent : '1.2-3' }}
+</p>
+
+<p style="font-weight: bold;">
+	Currency Pipe
+</p>
+
+<p>
+	{{ myNumber1 }} => currency : 'EUR' : 'symbol' : '1.2-2' <br>
+	{{ myNumber1 | currency : 'EUR' : 'symbol' : '1.2-2' }} <br>
+	{{ myNumber1 | currency : 'EUR' : 'code' : '1.2-2' }}
+</p>
+
+<p style="font-weight: bold;">
+	Date Pipe
+</p>
+
+<p>
+	2020/1/1 => myDate: 'EEEE/dd/MM/yyyy' <br>
+	{{ myDate | date : 'EEEE/dd/MM/yyyy' }}
+</p>
+
+<p>
+	2020/1/1 => myDate: 'dd/MMMM/yyyy' <br>
+	{{ myDate | date : 'dd/MMMM/yyyy' }}
+</p>
+
+<p style="font-weight: bold;">
+	JSON Pipe
+</p>
+
+<p>
+	{{ myObject }} => JSON <br>
+	{{ myObject | json }}
+</p>
+
+<a routerLink="">
+	<button class="btn btn-primary">Home</button>
+</a>

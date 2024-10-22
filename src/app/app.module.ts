@@ -11,6 +11,7 @@ import { Exo02TwoWayBindingComponent } from './exos/exo02-two-way-binding/exo02-
 import { Exo03EventBindingComponent } from './exos/exo03-event-binding/exo03-event-binding.component';
 import { Exo04AttributeBindingComponent } from './exos/exo04-attribute-binding/exo04-attribute-binding.component';
 import { Exo05BaseRoutingComponent } from './exos/exo05-base-routing/exo05-base-routing.component';
+import { Exo06PipesComponent } from './exos/exo06-pipes/exo06-pipes.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { Exo05BaseRoutingComponent } from './exos/exo05-base-routing/exo05-base-
     Exo03EventBindingComponent,
     Exo04AttributeBindingComponent,
     Exo05BaseRoutingComponent,
+    Exo06PipesComponent,
   ],
   imports: [
     BrowserModule,

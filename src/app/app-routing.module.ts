@@ -6,6 +6,7 @@ import { Exo02TwoWayBindingComponent } from './exos/exo02-two-way-binding/exo02-
 import { Exo03EventBindingComponent } from './exos/exo03-event-binding/exo03-event-binding.component';
 import { Exo04AttributeBindingComponent } from './exos/exo04-attribute-binding/exo04-attribute-binding.component';
 import { Exo05BaseRoutingComponent } from './exos/exo05-base-routing/exo05-base-routing.component';
+import { Exo06PipesComponent } from './exos/exo06-pipes/exo06-pipes.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
     { path: 'exo02', component: Exo02TwoWayBindingComponent },
     { path: 'exo03', component: Exo03EventBindingComponent },
     { path: 'exo04', component: Exo04AttributeBindingComponent },
-    { path: 'exo05', component: Exo05BaseRoutingComponent }
+    { path: 'exo05', component: Exo05BaseRoutingComponent },
+    { path: 'exo06', component: Exo06PipesComponent}
   ]}
 ];
 
