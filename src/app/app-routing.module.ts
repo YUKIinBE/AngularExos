@@ -9,6 +9,7 @@ import { Exo05BaseRoutingComponent } from './exos/exo05-base-routing/exo05-base-
 import { Exo06PipesComponent } from './exos/exo06-pipes/exo06-pipes.component';
 import { Exo07CustomPipesComponent } from './exos/exo07-custom-pipes/exo07-custom-pipes.component';
 import { Exo08ComponentDirectivesComponent } from './exos/exo08-component-directives/exo08-component-directives.component';
+import { Exo09StructuralDirectivesComponent } from './exos/exo09-structural-directives/exo09-structural-directives.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,7 +21,8 @@ const routes: Routes = [
     { path: 'exo05', component: Exo05BaseRoutingComponent },
     { path: 'exo06', component: Exo06PipesComponent},
     { path: 'exo07', component: Exo07CustomPipesComponent },
-    { path: 'exo08', component: Exo08ComponentDirectivesComponent}
+    { path: 'exo08', component: Exo08ComponentDirectivesComponent},
+    { path: 'exo09', component: Exo09StructuralDirectivesComponent}
   ]}
 ];
 

@@ -16,6 +16,7 @@ import { Exo07CustomPipesComponent } from './exos/exo07-custom-pipes/exo07-custo
 import { ToMinutePipe } from './exos/exo07-custom-pipes/Pipes/to-minute.pipe';
 import { ConvertisseurDegrePipe } from './exos/exo07-custom-pipes/Pipes/convertisseur-degre.pipe';
 import { Exo08ComponentDirectivesComponent } from './exos/exo08-component-directives/exo08-component-directives.component';
+import { Exo09StructuralDirectivesComponent } from './exos/exo09-structural-directives/exo09-structural-directives.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { Exo08ComponentDirectivesComponent } from './exos/exo08-component-direct
     ToMinutePipe,
     ConvertisseurDegrePipe,
     Exo08ComponentDirectivesComponent,
+    Exo09StructuralDirectivesComponent,
   ],
   imports: [
     BrowserModule,
