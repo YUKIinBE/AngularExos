@@ -3,6 +3,9 @@
 <p style="font-weight: bold;">
 	String Pipe
 </p>
+
+<hr>
+
 <p>
 	{{ myString }} => UpperCase <br>
 	{{ myString | uppercase }}
@@ -23,6 +26,8 @@
 	number : minIntegerDigits . minFractionDigits - maxFractionDigits
 </p>
 
+<hr>
+
 <p>
 	{{ myNumber1 }} => number : '1.2-3' <br>
 	{{ myNumber1 | number : '1.2-3' }}
@@ -37,6 +42,8 @@
 	Percent Pipe
 </p>
 
+<hr>
+
 <p>
 	{{ myPercentage }} => myPercentage : '1.2-3' <br>
 	{{ myPercentage | percent : '1.2-3' }}
@@ -45,6 +52,8 @@
 <p style="font-weight: bold;">
 	Currency Pipe
 </p>
+
+<hr>
 
 <p>
 	{{ myNumber1 }} => currency : 'EUR' : 'symbol' : '1.2-2' <br>
@@ -55,6 +64,8 @@
 <p style="font-weight: bold;">
 	Date Pipe
 </p>
+
+<hr>
 
 <p>
 	2020/1/1 => myDate: 'EEEE/dd/MM/yyyy' <br>
@@ -70,10 +81,14 @@
 	JSON Pipe
 </p>
 
+<hr>
+
 <p>
 	{{ myObject }} => JSON <br>
 	{{ myObject | json }}
 </p>
+
+<hr>
 
 <a routerLink="">
 	<button class="btn btn-primary">Home</button>

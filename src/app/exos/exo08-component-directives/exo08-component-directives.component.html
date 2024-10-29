@@ -1,0 +1,66 @@
+<h2>Exercice 08 - Générateur de formes</h2>
+
+<!-- NgStyle -->
+<p style="font-weight: bold;">Créer une application qui permet de modifier les propriétés d'un quadrilatère <br>
+Largeur, hauteur, couleur, bordure, ... <br>
+
+<!-- NgClass -->Permettre à l'utilisateur de transformer le quadrilatère en cercle.</p>
+
+<hr>
+
+<p style="font-weight: bold;">Propriétés du quadrilatère</p>
+<label for="hauteur">Hauteur ({{ hauteur }})</label> <br>
+<input id="hauteur" type="range" min="0" max="100" [(ngModel)]="hauteur" (ngModelChange)="update()">
+
+<br>
+
+<label for="largeur">Largeur ({{ largeur }})</label> <br>
+<input id="largeur" type="range" min="0" max="100" [(ngModel)]="largeur" (ngModelChange)="update()">
+
+<br>
+
+<label for="couleur">Couleur {{ couleur }}</label>
+<br>
+<input id="couleur" type="color" [(ngModel)]="couleur" (ngModelChange)="update()">
+
+<br>
+
+<label for="borderLargeur">Largeur de border({{ borderLargeur }})</label> <br>
+<input id="borderLargeur" type="range" min="1" max="10" [(ngModel)]="borderLargeur" (ngModelChange)="update()">
+
+<br>
+
+<label for="border-couleur">Border couleur {{ borderCouleur }}</label>
+<br>
+<input id="border-couleur" type="color" [(ngModel)]="borderCouleur" (ngModelChange)="update()">
+
+<br>
+
+<label for="border-style">Border style {{ borderStyle | titlecase }}</label>
+<br>
+<select id="border-style" [(ngModel)]="borderStyle" (ngModelChange)="update()">
+	<option value="solid">Solid</option>
+	<option value="none">None</option>
+	<option value="hidden">Hidden</option>
+	<option value="dotted">Dotted</option>
+	<option value="dashed">Dashed</option>
+	<option value="double">Double</option>
+	<option value="groove">Groove</option>
+	<option value="ridge">Ridge</option>
+	<option value="inset">Inset</option>
+	<option value="outset">Outset</option>
+</select>
+
+
+<br>
+
+<label for="cercle">Cercle</label> <br>
+<input type="checkbox" [(ngModel)]="isCercle" (ngModelChange)="update()">
+
+<div [ngStyle]="style" [ngClass]="{ cercle : isCercle}" (ngModelChange)="update()"></div>
+
+<hr>
+
+<a routerLink="">
+	<button class="btn btn-primary">Home</button>
+</a>

@@ -6,19 +6,23 @@
 	Astuce : cherchez du côté de setInterval() et du string Interpolation de Typescript
 </p>
 
+<hr>
+
 <p> Temps : {{ temps | toMinute}}</p>
 <button class="btn btn-secondary" (click)="start()">Start</button>
 <button class="btn btn-secondary" (click)="stop()">Stop</button>
 <button class="btn btn-secondary" (click)="reset()">Reset</button>
 
-<br>
-<br>
+<hr>
+
 <h2>Exercice 07.2 - Convertisseur de degré </h2>
 <p style="font-weight: bold;">
 	Créer une application qui permet de convertir une température de °C à °F et inversément. <br>
 	Deux pipes, un "toFahrenheit" et "toCelsius" qui permettent de convertir une température vers une unité spécifique. <br>
 	Un pipe universel qui permet de convertir vers l'unité souhaité en paramètre du pipe.
 </p>
+
+<hr>
 
 <input type="number" [(ngModel)]="degre" placeholder="degré à convertir">
 <select>
@@ -27,7 +31,8 @@
 </select>
 <p>Degré converti : {{ degre | convertisseurDegre : type | number : '1.2-2'}}</p>
 
-<br>
+<hr>
+
 <a routerLink="">
 	<button class="btn btn-primary">Home</button>
 </a>
